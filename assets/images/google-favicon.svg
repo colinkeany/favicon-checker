@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-7.0%" y="-5.0%" width="114.0%" height="114.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M45.5,21 L25,21 L25,29.5 L36.8,29.5 C35.7,34.9 31.1,38 25,38 C17.8,38 12,32.2 12,25 C12,17.8 17.8,12 25,12 C28.1,12 30.9,13.1 33.1,14.9 L39.5,8.5 C35.6,5.1 30.6,3 25,3 C12.8,3 3,12.8 3,25 C3,37.2 12.8,47 25,47 C36,47 46,39 46,25 C46,23.7 45.8,22.3 45.5,21 Z" id="path-3"></path>
+        <path d="M45.5,21 L25,21 L25,29.5 L36.8,29.5 C35.7,34.9 31.1,38 25,38 C17.8,38 12,32.2 12,25 C12,17.8 17.8,12 25,12 C28.1,12 30.9,13.1 33.1,14.9 L39.5,8.5 C35.6,5.1 30.6,3 25,3 C12.8,3 3,12.8 3,25 C3,37.2 12.8,47 25,47 C36,47 46,39 46,25 C46,23.7 45.8,22.3 45.5,21 Z" id="path-5"></path>
+        <path d="M45.5,21 L25,21 L25,29.5 L36.8,29.5 C35.7,34.9 31.1,38 25,38 C17.8,38 12,32.2 12,25 C12,17.8 17.8,12 25,12 C28.1,12 30.9,13.1 33.1,14.9 L39.5,8.5 C35.6,5.1 30.6,3 25,3 C12.8,3 3,12.8 3,25 C3,37.2 12.8,47 25,47 C36,47 46,39 46,25 C46,23.7 45.8,22.3 45.5,21 Z" id="path-7"></path>
+        <path d="M45.5,21 L25,21 L25,29.5 L36.8,29.5 C35.7,34.9 31.1,38 25,38 C17.8,38 12,32.2 12,25 C12,17.8 17.8,12 25,12 C28.1,12 30.9,13.1 33.1,14.9 L39.5,8.5 C35.6,5.1 30.6,3 25,3 C12.8,3 3,12.8 3,25 C3,37.2 12.8,47 25,47 C36,47 46,39 46,25 C46,23.7 45.8,22.3 45.5,21 Z" id="path-9"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-23" transform="translate(2.000000, 1.000000)">
+            <g id="Oval-5" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <g id="a"></g>
+            <polygon id="Shape" fill="#FBBC05" fill-rule="nonzero" mask="url(#mask-4)" points="1 38 1 12 18 25"></polygon>
+            <mask id="mask-6" fill="white">
+                <use xlink:href="#path-5"></use>
+            </mask>
+            <g id="a"></g>
+            <polygon id="Shape" fill="#EA4335" fill-rule="nonzero" mask="url(#mask-6)" points="1 12 18 25 25 18.9 49 15 49 1 1 1"></polygon>
+            <mask id="mask-8" fill="white">
+                <use xlink:href="#path-7"></use>
+            </mask>
+            <g id="a"></g>
+            <polygon id="Shape" fill="#34A853" fill-rule="nonzero" mask="url(#mask-8)" points="1 38 31 15 38.9 16 49 1 49 49 1 49"></polygon>
+            <mask id="mask-10" fill="white">
+                <use xlink:href="#path-9"></use>
+            </mask>
+            <g id="a"></g>
+            <polygon id="Shape" fill="#4285F4" fill-rule="nonzero" mask="url(#mask-10)" points="49 49 18 25 14 22 49 12"></polygon>
+        </g>
+    </g>
+</svg>
