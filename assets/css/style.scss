@@ -1,264 +1,196 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,900');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Red+Hat+Display:wght@400;700;900&display=swap');
 
 html {
 	height: 100%;
 }
 
-body {
-	background: #0F1527;
+html, body {
+	font-family: 'Inter', sans-serif !important;
 }
 
-h1, p {
-	font-family: 'Nunito Sans', sans-serif;
+.overlay {
+	.overlay-container {
+		padding: 20px;
+		width: 100%;
+		max-width: 400px;
+		position: absolute;
+		left: 50%;
+		margin-left: -200px;
+		top: 110px;
+		background-color: #fff;
+		border-radius: 6px;
+		box-shadow: 0 15px 45px rgba(0,0,0,0.4);
+		z-index: 998;
+		transform: rotateX(35deg);
+		transition: all 0.3s;
+		opacity: 0;
+		&.in {
+			top: 80px;
+			transform: rotateX(0);
+			opacity: 1;
+		}
+	}
+
+	.overlay-bg {
+		z-index: 997;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-color: transparent;
+		transition: all 0.3s;
+		&.in {
+			background-color: rgba(0,0,0,0.7);
+		}
+	}
 }
 
-h1 {
-	font-weight: 900;
-}
-
-p {
-	font-size: 20px;
+.rhd {
+	font-family: 'Red Hat Display', sans-serif;
 	font-weight: 400;
+	color: #000;
+
+	&.bold {
+		font-weight: 700;
+	}
+
+	&.bolder {
+		font-weight: 900;
+	}
 }
 
-.container-xxl {
-	width: 1000px;
-	min-width: 900px;
-	margin: auto;
+.text-bold {
+	font-weight: 600 !important;
+}
+
+.upload-favicon {
+	background: #1957f7;
+	border: 1px solid transparent;
+	box-shadow: none;
+	border-radius: 100px;
+	color: #FFF;
+	padding: 12px 20px;
+	font-weight: 600;
+	&:hover, &:focus, &:active {
+		background: #083fcc!important;
+		border-color: transparent !important;
+		box-shadow: none;
+	}
+}
+
+.nav-link {
+	&:hover {
+		background-color: #f6f7f8;
+		border-radius: 100px;
+	}
+}
+
+.customURL {
+	padding: 12px 20px;
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	width: 400px;
+	background: #FFFFFF;
+	border: 1px solid #C7CBD1;
+	box-shadow: 0 0 0 3px #F4F6F9;
+	border-radius: 100px;
 }
 
 .browser {
-	&.browser-chrome {
-		.top-crossbar {
-			background-color: #e0e3e7;
-			border-radius: 6px 6px 0 0;
-			border-top: 1px solid #BEBDBE;
-			border-left: 1px solid #BEBDBE;
-			border-right: 1px solid #BEBDBE;
-			.browser-buttons {
-				padding: 0 12px;
-			}
-			.tabs {
-				margin-top: 9px;
-				li {
-					padding: 12px;
-					height: 38px;
-					width: 100%;
-					max-width: 240px;
-					position: relative;
-					.favicon {
-						margin-right: 8px;
-					}
-				}
-				.corner {
-					bottom: 0;
-					z-index: 999;
-				}
-				.corner--left{
-					left: -7px;
-				}				
-				.corner--right {
-					right: -7px;
-				}
-				.tabs--active {
-					background-color: #fff;
-					border-radius: 9px 9px 0 0;
-				}
-				.tabs--hover {
-					background-color: #f5f6f7;
-					border-radius: 9px 9px 0 0;
-				}
-			}
-		}
-		.bottom-crossbar {
-			border-left: 1px solid #BEBDBE;
-			border-right: 1px solid #BEBDBE;
-			border-radius: 0 0 6px 6px;
-		}
-	}
-	&.browser-firefox {
-		.top-crossbar {
-			border-radius: 6px 6px 0 0;
-			.browser-buttons {
-				padding: 0 0 0 12px;
-			}
-			.tabs {
-				font-size: 11px;
-				li {
-					padding: 8px 12px;
-					height: 34px;
-					width: 225px;
-					max-width: 240px;
-					position: relative;
-					.favicon {
-						margin-right: 8px;
-					}
-				}
-				.tabs--active {
-					background-color: #f9f9fa;
-					box-shadow: 0 2px 0 #0C8FFF inset, 0 1px 0 #f7f7f8;
-					border-left: 1px solid #444446;
-				}
-				.tabs--hover {
-					background-color: #595959;
-					box-shadow: 0 2px 0 #878788 inset;
-					border-left: 1px solid #060607;
-					color: #DDE0E5;
-				}
-				.tabs--inactive {
-					border-left: 1px solid #878788;
-					color: #DDE0E5;
-				}
-			}
-		}
-		.bottom-crossbar {
-			background-color: #f9f9fa;
-			border-radius: 0 0 6px 6px;
-			border-top: 1px solid #1C1C1D;
-		}
-		&.dark-mode {
-			.top-crossbar {
-				border-radius: 6px 6px 0 0;
-				.browser-buttons {
-					padding: 0 0 0 12px;
-				}
-				.tabs {
-					font-size: 11px;
-					li {
-						padding: 8px 12px;
-						height: 34px;
-						width: 225px;
-						max-width: 240px;
-						position: relative;
-						.favicon {
-							margin-right: 8px;
-						}
-					}
-					.tabs--active {
-						background-color: #39393B;
-						box-shadow: 0 2px 0 #0C8FFF inset, 0 1px 0 #39393b;
-						border-left: 1px solid #444446;
-					}
-					.tabs--hover {
-						background-color: #2A2A2B;
-						box-shadow: 0 2px 0 #5B5B5B inset;
-						border-left: 1px solid #060607;
-						color: #ffffff;
-					}
-					.tabs--inactive {
-						border-left: 1px solid #5F5F60;
-						color: #ffffff;
-					}
-				}
-			}
-			.bottom-crossbar {
-				background-color: #39393B;
-				border-radius: 0 0 6px 6px;
-				border-top: 1px solid #1C1C1D;
-			}
-		}
-		&.light-mode {
-			.top-crossbar {
-				border-radius: 6px 6px 0 0;
-				.browser-buttons {
-					padding: 0 0 0 12px;
-				}
-				.tabs {
-					font-size: 11px;
-					li {
-						padding: 8px 12px;
-						height: 34px;
-						width: 225px;
-						position: relative;
-						.favicon {
-							margin-right: 8px;
-						}
-					}
-					.tabs--active {
-						background-color: #f9f9fa;
-						box-shadow: 0 2px 0 #0C8FFF inset, 0 1px 0 #f9f9fa;
-						border-left: 1px solid #c0c1c5;
-					}
-					.tabs--hover {
-						background-color: #dad7d9;
-						box-shadow: 0 2px 0 #aeabad inset;
-						border-left: 1px solid #a7a7ab;
-						color: #ffffff;
-					}
-					.tabs--inactive {
-						border-left: 1px solid #adadb1;
-						color: #ffffff;
-					}
-				}
-			}
-			.bottom-crossbar {
-				background-color: #f9f9fa;
-				border-radius: 0 0 6px 6px;
-				border-top: 1px solid #999a9d;
-			}
-		}
-	}
-
-	&.browser-safari {
-		.top-crossbar {
-			border-radius: 6px 6px 0 0;
-			.browser-buttons {
-				padding: 0 0 0 12px;
-			}
-		}
-		.bottom-crossbar {
-			background-color: #acacac;
-			border-radius: 0 0 6px 6px;
-			border-top: 1px solid #a0a0a0;
-			.tabs {
-				font-size: 11px;
-				text-align: center;
-				li {
-					padding: 8px 12px;
-					height: 28px;
-					position: relative;
-					.favicon {
-						margin-right: 8px;
-					}
-				}
-				.tabs--active {
-					background-image: linear-gradient(-180deg, #DFE0DF 0%, #D8D9D8 100%);
-					border-radius: 0 0 0 6px;
-				}
-				.tabs--hover {
-					background-image: linear-gradient(-180deg, #B6B6B6 0%, #9E9E9E 100%);
-					color: #202529;
-					border-left: 1px solid #8a8a8a;
-					border-right: 1px solid #8a8a8a;
-				}
-				.tabs--inactive {
-					background-image: linear-gradient(-180deg, #BCBCBC 0%, #ACACAC 100%);
-					color: #202529;
-					border-radius: 0 0 6px 0;
-				}
-			}
-		}
+	p {
+		color: #000;
+		text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
 	}
 }
 
-.browser-buttons {
-	li {
-		height: 12px;
-		width: 12px;
-		border: 1px solid;
-		border-radius: 20px;
-		&.browser-buttons--red {
-			background-color: #FF6158;
-			border-color: #F34C43;
-		}
-		&.browser-buttons--yellow {
-			background-color: #FFBD2E;
-			border-color: #F2AD18;
-			margin: 0 7px;
-		}
-		&.browser-buttons--green {
-			background-color: #27CA41;
-			border-color: #12BA2B;
-		}
+.browser-dark {
+	p {
+		color: #fff;
+		text-shadow: 1px 1px 0 rgba(0,0,0,1);
 	}
 }
+
+.chrome-default {
+	background-color: #FFF;
+}
+
+.chrome-hover {
+	background-color: #f6f7f8;
+}
+
+.chrome-inactive {
+	background-color: #e7eaed;
+}
+
+.chrome-default-dark {
+	background-color: #36363a;
+}
+
+.chrome-hover-dark {
+	background-color: #2e2e32;
+}
+
+.chrome-inactive-dark {
+	background-color: #202123;
+}
+
+.safari-default {
+	background-color: #d1d1d1;
+}
+
+.safari-hover {
+	background-color: #bbbbbb;
+}
+
+.safari-inactive {
+	background-color: #c3c3c2;
+}
+
+.safari-default-dark {
+	background-color: #303133;
+}
+
+.safari-hover-dark {
+	background-color: #282a2b;
+}
+
+.safari-inactive-dark {
+	background-color: #1a1c1c;
+}
+
+.firefox-default {
+	background-color: #f5f6f7;
+}
+
+.firefox-hover {
+	background-color: #bcbfc4;
+}
+
+.firefox-inactive {
+	background-color: #e0e2e4;
+}
+
+.firefox-default-light {
+	background-color: #f6f7f8;
+}
+
+.firefox-hover-light {
+	background-color: #cecfd1;
+}
+
+.firefox-inactive-light {
+	background-color: #e2e4e6;
+}
+
+.firefox-default-dark {
+	background-color: #323234;
+}
+
+.firefox-hover-dark {
+	background-color: #252526;
+}
+
+.firefox-inactive-dark {
+	background-color: #0d0d0d;
+}
+
