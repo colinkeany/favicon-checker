@@ -29,7 +29,7 @@
 	<meta name="robots" content="noodp">
 	<!-- Canonical URL -->
 	<link rel="canonical" href="http://www.colinkeany.com/favicon-checker">
-	<link href="https://unpkg.com/primer/build/build.css" rel="stylesheet">
+	<link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="icon" type="image/png" href="assets/images/favicon-favicon_checker.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
@@ -41,7 +41,7 @@
 <body class="height-full width-full d-flex flex-column">
 	<div class="overlay height-full width-full position-fixed top-0 left-0" style="display: none; z-index: 999;">
 		<div class="overlay-container">
-			<span class="text-gray-light close-overlay material-icons-round position-absolute right-0 top-0 mr-2 mt-2" style="cursor: po;">
+			<span class="text-gray-light close-overlay material-icons-round position-absolute right-0 top-0 mr-2 mt-2" style="cursor: pointer;">
 				close
 			</span>
 			<p class=" text-bold">About Favicon Checker</p>
@@ -50,12 +50,12 @@
 		</div>
 		<div class="overlay-bg"></div>
 	</div>
-	<div class="width-full bg-white d-flex flex-column pt-3 pb-1">
+	<div class="width-full bg-white d-flex flex-column pt-3 pb-md-1 pb-3">
 		<div class="d-flex flex-items-center flex-justify-between px-4">
-			<div class="width-full d-flex flex-items-center">
+			<div class="width-full d-flex flex-md-row flex-column flex-items-center">
 				<h1 class="h2 m-0 rhd bolder">Favicon Checker</h1>
-				<div class="d-flex flex-auto flex-items-center pl-4">
-					<div class="d-flex flex-items-center flex-auto">
+				<div class="d-flex flex-md-row flex-column flex-auto flex-items-center pl-md-4 pl-0">
+					<div class="flex-md-order-1 flex-order-2 d-flex flex-md-row flex-column flex-items-center flex-auto">
 						<label for="file-upload" class="btn text-center d-flex flex-items-center upload-favicon">
 							<span class="d-flex flex-items-center">
 								<span class="material-icons-round mr-2">
@@ -65,19 +65,19 @@
 							</span>
 						</label>
 						<input class="d-none" id="file-upload" type="file" onchange="readURL(this);">
-						<span class="text-bold mx-4 text-gray-light text-bold">OR</span>
-						<input class="form-control customURL" placeholder="Enter a URL to your favicon..." type="text">
+						<span class="text-bold mx-4 my-md-0 my-3 text-gray-light text-bold">OR</span>
+						<input class="form-control customURL" style="max-width: 100%;" placeholder="Enter a URL (google.com, wikipedia.org, etc.)" type="text">
 						<button class="btn custom d-none">Update</button>
 					</div>
-					<ul class="list-style-none d-flex flex-items-center">
+					<ul class="mt-md-0 mt-3 mb-md-0 mb-4 flex-md-order-2 flex-order-1 list-style-none d-flex flex-items-center">
 						<li>
-							<a href="#" class="about nav-link py-2 px-3 link-gray-dark no-underline d-block">About</a>
+							<a href="#" class="about nav-link py-2 px-3 Link--primary no-underline d-block">About</a>
 						</li>
 						<li>
-							<a href="https://github.com/colinkeany/favicon-checker" class="nav-link py-2 px-3 link-gray-dark no-underline d-block">Contribute</a>
+							<a href="https://github.com/colinkeany/favicon-checker" class="nav-link py-2 px-3 Link--primary no-underline d-block">Contribute</a>
 						</li>
 						<li>
-							<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.colinkeany.com%2Ffavicon-checker&via=colinkeany&text=Favicon%20Checker%20helps%20you%20compare%20your%20favicons%20on%20Chrome%2C%20Safari%20and%20Firefox%20in%20default%2C%20dark%20and%20light%20modes.&hashtags=faviconchecker%2Cfavicon" class="nav-link py-2 px-3 link-gray-dark no-underline d-block">Share</a>
+							<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.colinkeany.com%2Ffavicon-checker&via=colinkeany&text=Favicon%20Checker%20helps%20you%20compare%20your%20favicons%20on%20Chrome%2C%20Safari%20and%20Firefox%20in%20default%2C%20dark%20and%20light%20modes.&hashtags=faviconchecker%2Cfavicon" class="nav-link py-2 px-3 Link--primary no-underline d-block">Share</a>
 						</li>
 					</ul>
 				</div>
