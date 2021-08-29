@@ -24,6 +24,10 @@ html, body {
     top: 80px;
     transform: rotateX(0);
     opacity: 1; }
+  @media screen and (max-width: 768px) {
+    .overlay .overlay-container {
+      width: 330px;
+      margin-left: -165px; } }
 .overlay .overlay-bg {
   z-index: 997;
   height: 100%;
@@ -73,6 +77,9 @@ html, body {
   border: 1px solid #C7CBD1;
   box-shadow: 0 0 0 3px #F4F6F9;
   border-radius: 100px; }
+  @media screen and (max-width: 768px) {
+    .customURL {
+      width: 300px; } }
 
 .browser p {
   color: #000;
