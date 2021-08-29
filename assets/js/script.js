@@ -16,8 +16,9 @@ function readURL(input) {
 $('document').ready(function() {
 	$('.custom').click(function() {
 		var customURL = $('.customURL').val();
+		var buildURL = 'https://www.google.com/s2/favicons?domain=' + customURL;
 		$('.favicon')
-			.attr('src', customURL)
+			.attr('src', buildURL)
 			.width(16)
 			.height(16);
 	});
