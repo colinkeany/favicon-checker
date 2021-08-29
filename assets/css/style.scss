@@ -29,6 +29,10 @@ html, body {
 			transform: rotateX(0);
 			opacity: 1;
 		}
+		@media screen and (max-width: 768px) {
+			width: 330px;
+			margin-left: -165px;
+		}
 	}
 
 	.overlay-bg {
@@ -94,6 +98,9 @@ html, body {
 	border: 1px solid #C7CBD1;
 	box-shadow: 0 0 0 3px #F4F6F9;
 	border-radius: 100px;
+	@media screen and (max-width: 768px) {
+		width: 300px;
+	}
 }
 
 .browser {
